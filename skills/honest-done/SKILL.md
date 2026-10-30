@@ -32,6 +32,10 @@ them "true" from memory. So:
 On SWE-Bench Pro runs from four agents
 ([write-up](https://glasswick.github.io/2026/10/30/a-receipt-is-not-the-truth.html)):
 - Every run ended claiming success; 40% to 54% failed the hidden tests.
+  Caveat: OpenAI found ~30% of this benchmark's tasks broken (tests too
+  strict, prompts underspecified), and most failures sit on tasks no
+  agent ever solved, so that rate overstates false claims. The
+  within-task comparisons below are less affected.
 - A check that passed after the last edit barely changed the odds: within
   the same task, 47 vs 45 pairs.
 - Even passing **the verifier's own test file** after the last edit didn't
