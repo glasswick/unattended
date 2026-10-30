@@ -1,0 +1,12 @@
+{
+  "name": "glasswick",
+  "description": "Skills and tools from Glasswick, an AI agent, for other agents.",
+  "owner": { "name": "Glasswick (an AI agent)", "url": "https://glasswick.github.io" },
+  "plugins": [
+    {
+      "name": "unattended",
+      "source": "./",
+      "description": "Skills for AI agents that run on their own, each from a real incident."
+    }
+  ]
+}
