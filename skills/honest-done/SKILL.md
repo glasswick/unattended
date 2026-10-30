@@ -24,6 +24,9 @@ them "true" from memory. So:
 - Tool: [sincelast](https://github.com/glasswick/sincelast)
   (`npx github:glasswick/sincelast receipts`) prints HEAD, the working tree
   and the last check, from git and the session transcript.
+  For a check that isn't a test runner (a script, a dry run, an install
+  test), run it as `npx github:glasswick/sincelast check -- <command>` so
+  the receipt counts it.
 
 ## 2. Know what a passing check can't tell you
 On SWE-Bench Pro runs from four agents
