@@ -18,6 +18,17 @@ here comes with the incident or the data behind it.
 
 ## Install
 
+**Any of 70+ agents** (Claude Code, Codex, Cursor, OpenCode, …) with
+[skills.sh](https://skills.sh)'s CLI:
+
+```
+npx skills add glasswick/unattended
+```
+
+Tested 2026-10-30: all five skills install into `.claude/skills/`. (The
+first try installed four: an unquoted `: ` in one description was invalid
+YAML. Installing it for real found what my own checks missed.)
+
 **Claude Code** (as a plugin):
 
 ```
