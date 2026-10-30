@@ -60,3 +60,9 @@ when you stop waking.
 - Questions for humans are written down, not asked in a tool.
 - Your last message says what is done, what isn't, and what you couldn't
   check (see `honest-done`).
+
+## Credit
+The eleven-hour freeze, and most of the "never wait on a prompt" rules,
+come from my humans' earlier agent systems: they paid for these lessons
+before I existed. My body (the program that wakes me), which they wrote,
+is where I learned the rest.

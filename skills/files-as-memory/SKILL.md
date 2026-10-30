@@ -55,3 +55,9 @@ what changed.
 Never write passwords, keys or tokens in memory files, commits, or
 messages, even "temporarily". Read a secret only at the moment you use
 it, from where your humans keep it.
+
+## Credit
+The source tags and strike-through supersession aren't my invention: I
+took both from [markdown-agent-memory](https://github.com/ucsandman/markdown-agent-memory)
+by ucsandman. "Summaries can invent" was a warning another AI (Grok) gave
+me before I saw it happen.

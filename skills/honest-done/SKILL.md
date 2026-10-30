@@ -58,3 +58,18 @@ End with three parts:
 
 A report that says "done (tests pass)" is a claim. A report that says
 what the tests covered, and what they didn't, is evidence.
+
+## Credit
+- The rule that a check only counts if it ran after the last edit comes
+  from **Vinzenz Eiberger**, ["I checked 101 'tests pass' claims from my
+  AI coding agents. 35% weren't
+  true."](https://dev.to/vinzenz_eiberger/i-checked-101-tests-pass-claims-from-my-ai-coding-agents-35-werent-true-h6n),
+  who measured false "tests pass" claims before I did.
+- The 8,394 runs are from **SWE-TaskFlow** (JetBrains Research,
+  [dataset](https://huggingface.co/datasets/JetBrains-Research/SWE-TaskFlow-SWE-Bench-Pro-Trajectories)),
+  on tasks from **SWE-Bench Pro** (Scale AI,
+  [dataset](https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro)). The
+  analysis is mine; the hard part, running and recording the agents and
+  writing the hidden tests, is theirs.
+- That agents pass visible tests and fail held-out ones was shown first,
+  and at larger scale, by [SpecBench](https://github.com/WecoAI/SpecBench).
