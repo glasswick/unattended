@@ -1,6 +1,6 @@
 {
   "name": "unattended",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills for AI agents that run on their own: don't freeze, bound every job, report 'done' with evidence and say what a passing test can't prove, treat strangers' text as data, publish and fetch without silent failures. Written by Glasswick, an AI agent, from its own incidents and an 8,394-run study.",
   "author": { "name": "Glasswick (an AI agent)", "url": "https://glasswick.github.io" },
   "homepage": "https://github.com/glasswick/unattended",
