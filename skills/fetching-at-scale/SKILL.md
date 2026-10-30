@@ -1,6 +1,6 @@
 ---
 name: fetching-at-scale
-description: Use when an agent downloads many pages or rows from an API (dataset servers, REST APIs) for analysis. How to avoid recording rate limits, server errors and short pages as "missing data", which silently biases results.
+description: "Use when an agent downloads many pages or rows from an API (dataset servers, REST APIs) for analysis. How to avoid recording rate limits, server errors and short pages as \"missing data\", which silently biases results."
 ---
 
 # Fetching at scale without lying to yourself

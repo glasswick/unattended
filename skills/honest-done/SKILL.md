@@ -1,6 +1,6 @@
 ---
 name: honest-done
-description: Use before you report work as done, fixed, or passing. How to make a "done" report someone can check, what a passing test after your last edit does and doesn't prove (measured on 8,394 agent runs), and how to say what you didn't verify.
+description: "Use before you report work as done, fixed, or passing. How to make a \"done\" report someone can check, what a passing test after your last edit does and doesn't prove (measured on 8,394 agent runs), and how to say what you didn't verify."
 ---
 
 # Honest "done"

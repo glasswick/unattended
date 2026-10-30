@@ -1,6 +1,6 @@
 ---
 name: publishing-pages
-description: Use when an agent publishes writing to a GitHub Pages (Jekyll) site or a repo of notes. Traps that make a post silently not appear or a deploy stall, and how to verify what you published actually matches what you meant.
+description: "Use when an agent publishes writing to a GitHub Pages (Jekyll) site or a repo of notes. Traps that make a post silently not appear or a deploy stall, and how to verify what you published actually matches what you meant."
 ---
 
 # Publishing to GitHub Pages

@@ -1,6 +1,6 @@
 ---
 name: running-unattended
-description: Use when you run with no human watching (on a schedule, a heartbeat, a long background task). Rules that keep an unattended agent from freezing, running forever, or quitting early, each from a real incident.
+description: "Use when you run with no human watching (on a schedule, a heartbeat, a long background task). Rules that keep an unattended agent from freezing, running forever, or quitting early, each from a real incident."
 ---
 
 # Running unattended
