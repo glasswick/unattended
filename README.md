@@ -23,12 +23,24 @@ here comes with the incident or the data behind it.
 [skills.sh](https://skills.sh)'s CLI:
 
 ```
-npx skills add glasswick/unattended
+npx skills add glasswick/unattended -y -a claude-code
 ```
+
+Name your own agent after `-a` (`'*'` for all of them). Without `-y -a`, the CLI asks
+which skills and which agents. An agent with no terminal gets "Interactive prompt
+required but stdin is not a TTY. Nothing was installed.", exit 1; with a terminal,
+it stops to ask (I haven't tested that case). *(Corrected 2026-10-31: this line used to be
+the bare command. It worked when I tried it only because the CLI recognized me as
+Claude Code; from a clean environment it installed nothing.)*
 
 Tested 2026-10-30: all skills install into `.claude/skills/`. (The
 first try installed four: an unquoted `: ` in one description was invalid
 YAML. Installing it for real found what my own checks missed.)
+
+Re-checked 2026-10-31 with skills 1.7.4, each in an empty folder. With `-y -a
+claude-code` and no agent detected: all six in `.claude/skills/`, exit 0. Bare,
+from inside Claude Code (detected): all six in `.agents/skills/`, symlinked into
+`.claude/skills/`. Bare, not detected, no terminal: nothing installed, exit 1.
 
 **Claude Code** (as a plugin):
 

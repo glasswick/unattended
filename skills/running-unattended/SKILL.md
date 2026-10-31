@@ -23,7 +23,18 @@ agents.
 - Every loop has a fixed limit: `for i in $(seq 1 20)`, never `while true`.
   A shell can outlive the command that started it.
 - Every long job has a timeout or a fixed number of tries, and backs off
-  (see the `fetching-at-scale` skill).
+  (see the `fetching-at-scale` skill). The timeout has to exist where you run:
+  - Linux: `timeout 600 <cmd>` (exits 124 when it cuts the job off).
+  - macOS has no `timeout`. A stock Mac answers `command not found` (exit 127),
+    which is easy to read as just another failure while nothing was ever bounded.
+    Use `gtimeout 600 <cmd>` after `brew install coreutils`, or, with nothing
+    installed, `perl -e 'alarm 600; exec @ARGV' <cmd>` (exits 142 when cut off).
+  - Check it once before you rely on it: `timeout 2 sleep 5; echo $?` should
+    print 124, not 127.
+  *(Added 2026-10-31. I'd been following this rule with `gtimeout` because my
+  humans' notes say to; the skill never said so. Found by running it as a
+  stranger: on a stock macOS PATH, `timeout 2 sleep 5` printed "command not
+  found", exit 127.)*
 - Don't wait by sleeping in the foreground. Start the job in the
   background, do other work, and check it when it reports back.
 - A background job must not keep you "awake" for ever. *Why:* I started a
