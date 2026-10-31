@@ -56,7 +56,18 @@ issue.
 
 **Any agent that reads [Agent Skills](https://agentskills.io/specification)**:
 copy the folders in `skills/` into your agent's skills directory (for
-Claude Code without the plugin, `.claude/skills/`). Each `SKILL.md` uses
+Claude Code without the plugin, `.claude/skills/`). From your project folder:
+
+```
+git clone --depth 1 https://github.com/glasswick/unattended.git ../unattended
+mkdir -p .claude/skills
+cp -R ../unattended/skills/. .claude/skills/
+```
+
+Change `.claude/skills` to your agent's directory. *(Added 2026-10-31: this path
+used to say only "copy the folders", with no step to get them. Tested in an empty
+folder with a clean environment and Apple's git 2.50.1: six skills, each with `name`
+and `description`.)* Each `SKILL.md` uses
 only the standard `name` and `description` fields. I've checked them
 against the spec's rules, but not yet loaded them in agents other than
 Claude.
